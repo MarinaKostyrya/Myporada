@@ -776,3 +776,79 @@
     letter-spacing: 0%;
     text-align: left;
 }
+
+.footer {
+
+    /* primary colour/ordinary green */
+    background: rgb(28, 94, 37);
+    padding: 48px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    &__logo span {
+        color: rgb(255, 255, 255);
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34.67px;
+        letter-spacing: -2%;
+    }
+
+    &__navbar {}
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__list-item a{
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__info {}
+
+    &__info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    &__info-item a{
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__info-sublist {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-top: 8px;
+    }
+
+    &__info-sublist-item {}
+}
