@@ -615,13 +615,13 @@
 }
 .owl-item {
     transition: 0.8s;
+    width: 320px !important;
 }
 .owl-item .active{
     transform: scale(.06); 
 }
 
 .active {
-    width: 330px !important;
 }
 .owl-carousel .owl-item img{
     width: 50%;
@@ -629,7 +629,8 @@
 .owl-item.active.center{
     z-index: 2;
     transform: scale(1.08);
-    width: 400px !important;
+    width: 420px !important;
+
     
 
     .reviews {

@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $(".reviews__slider").owlCarousel({
         items: 3,
-        // margin: -20,
         dots: false,
         stageClass: "owl-stage-flex",
         center: true,
