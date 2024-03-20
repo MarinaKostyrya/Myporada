@@ -104,10 +104,8 @@
 .main {}
 
 .banner {
-    padding-top: 196px;
-    background: url('../img/background01.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 190px;
+    background: url(../img/background01.png) 0 100px / 100% 88% no-repeat;
 
     &__container {
 
@@ -151,7 +149,7 @@
     }
 
     &__images img {
-        max-width: 1030px;
+        max-width: 100%;
     }
 }
 
@@ -200,12 +198,11 @@
 
     &__cards {
         display: flex;
-
-        gap: 32px;
+        justify-content: space-between;
     }
 
     &__card {
-        max-width: 214px;
+        max-width: 241px;
     }
 
     &__icon {
@@ -237,13 +234,12 @@
         line-height: 150%;
         letter-spacing: 0%;
         text-align: center;
+        padding: 0 6px;
     }
 }
 
 .experience {
-    background: url('../img/bgwhyUs.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/bgwhyUs.png) 0 0 / 100% 100% no-repeat;
     position: relative;
     padding-bottom: 150px;
 
@@ -319,22 +315,22 @@
 }
 
 .socialActivity {
-    background: url('../img/bg-social.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/bg-social.png) 0 0 / 100% 100% no-repeat;
     position: relative;
-    padding-top: 96px;
-    padding-bottom: 145px;
+    padding-top: 105px;
+    padding-bottom: 150px;
 
     &__container {
         display: flex;
         align-items: center;
-        gap: 99px;
+        justify-content: space-between;
     }
 
     &__image {}
 
-    &__content {}
+    &__content {
+        max-width: 430px;
+    }
 
     &__title {
         /* Roboto/H3 (Medium) */
@@ -352,7 +348,7 @@
         /* Roboto/Body 2 (Regular) */
         color: rgb(3, 19, 0);
         font-family: Roboto;
-        font-size: 1em;
+        font-size: 18px;
         font-weight: 400;
         line-height: 150%;
         letter-spacing: 0%;
@@ -388,7 +384,7 @@
     &__text {
         color: rgb(3, 19, 0);
         font-family: Roboto;
-        font-size: 1em;
+        font-size: 18px;
         font-weight: 400;
         line-height: 150%;
         letter-spacing: 0%;
@@ -402,12 +398,14 @@
     background: #072810;
 
     &__container {
-        padding: 200px 0;
+        padding: 200px 0 177px;
+        display: flex;
+        justify-content: center;
     }
 
     &__video img {
         max-width: 100%;
-        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -542,7 +540,7 @@
 
         /* primary colour/ordinary green */
         background: rgb(28, 94, 37);
-        padding: 17px 126px;
+        padding: 14px 129px;
     }
 
     &__image {}
@@ -561,7 +559,7 @@
     &__card-icon {
         display: flex;
         justify-content: center;
-        padding-bottom: 45px;
+        padding-bottom: 25px;
     }
 
     &__card-content {
@@ -810,6 +808,96 @@
     text-align: left;
 }
 
+.form {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__content {
+        padding: 64px 90px;
+        border: 2px solid rgb(28, 94, 37);
+        border-radius: 16px;
+        max-width: 520px;
+    }
+
+    &__title {
+        /* Roboto/H3 (Medium) */
+        color: rgb(3, 19, 0);
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        /* Roboto/Body 2 (Regular) */
+        color: rgb(3, 19, 0);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 32px;
+    }
+
+    &__email:focus-visible {
+        border: 1px solid rgb(28, 94, 37);
+    }
+
+    &__email {
+        padding: 15px 16px;
+        border: 1px solid rgb(28, 94, 37);
+        border-radius: 8px;
+
+    }
+
+
+    &__description {
+        box-sizing: border-box;
+        border: 1px solid rgb(28, 94, 37);
+        border-radius: 8px;
+        padding: 16px;
+        height: 144px;
+    }
+
+
+    &__btn {
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        border-radius: 100px;
+
+        /* primary colour/ordinary green */
+        background: rgb(28, 94, 37);
+        padding: 14px 126px;
+        width: 100%;
+    }
+
+    &__image {}
+}
+
+
+
+
 .footer {
 
     /* primary colour/ordinary green */
@@ -845,7 +933,7 @@
         gap: 16px;
     }
 
-    &__list-item a{
+    &__list-item a {
         /* Roboto/Button 1 (Bold) */
         color: rgb(255, 255, 255);
         font-family: Roboto;
@@ -865,7 +953,7 @@
 
     }
 
-    &__info-item a{
+    &__info-item a {
         /* Roboto/Button 1 (Bold) */
         color: rgb(255, 255, 255);
         font-family: Roboto;
