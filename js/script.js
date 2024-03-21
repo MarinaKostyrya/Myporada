@@ -22,3 +22,13 @@ $(document).ready(function(){
 
     
 });
+
+
+const burgerBtn = document.getElementById('burgerBtn')
+const burger = document.getElementById('burger')
+
+burgerBtn.addEventListener('click', function() {
+    burger.classList.toggle('burgerActive')
+
+    
+})
