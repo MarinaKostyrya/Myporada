@@ -101,6 +101,98 @@
     }
 }
 
+.header__burger {
+    display: none;
+}
+
+.burger {
+    display: none;
+    background: white;
+    height: 100vh;
+    padding-top: 100px;
+
+
+    &__container {
+        overflow: hidden;
+    }
+
+    &__navbar {}
+
+    &__list {}
+
+    &__item {
+        padding: 14px 0;
+        border-bottom: 1px solid rgb(223, 232, 225);
+    }
+
+    &__item:nth-child(1) {
+        
+        border-top: 1px solid rgb(223, 232, 225);
+    }
+
+
+
+    &__item a {
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(3, 19, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 0 24px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+    }
+
+    &__btn button {
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        border-radius: 100px;
+        padding: 10px 24px;
+        /* primary colour/ordinary green */
+        background: rgb(28, 94, 37);
+        
+    }
+}
+
+
+
+@media (max-width: 768px) {
+   
+    .header__navbar {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+}
+
+.burgerActive {
+    display: block;
+}
+
+.closeMain {
+    display: none;
+}
+
+
 .main {}
 
 .banner {
@@ -607,31 +699,14 @@
     }
 }
 
-.owl-stage-flex{
+.owl-stage-flex {
     display: flex;
     align-items: center;
     height: 400px;
 }
+
 .owl-item {
     transition: 0.8s;
-    &.active{
-        transform: scaleY(0.86);  
-        &.center{
-            z-index: 2;
-            transform: scale(1.2);
-            .reviews__content {
-                margin-top: 30px;
-                margin-bottom: 30px;
-                filter: none;
-            }
-
-        }
-    }
-}
-
-.owl-carousel .owl-item img{
-    width: 50%;
-}
 
 
 .reviews {
@@ -700,7 +775,7 @@
     &__buttons {
         display: flex;
         gap: 40px;
-       justify-content: center;    
+        justify-content: center;
         padding-top: 48px;
     }
 
@@ -942,5 +1017,3 @@
 
     &__info-sublist-item {}
 }
-
-
