@@ -105,21 +105,91 @@
     display: none;
 }
 
+.burger {
+    display: none;
+    background: white;
+    height: 100vh;
+    padding-top: 100px;
+
+
+    &__container {
+        overflow: hidden;
+    }
+
+    &__navbar {}
+
+    &__list {}
+
+    &__item {
+        padding: 14px 0;
+        border-bottom: 1px solid rgb(223, 232, 225);
+    }
+
+    &__item:nth-child(1) {
+        
+        border-top: 1px solid rgb(223, 232, 225);
+    }
+
+
+
+    &__item a {
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(3, 19, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 0 24px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+    }
+
+    &__btn button {
+        /* Roboto/Button 1 (Bold) */
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        border-radius: 100px;
+        padding: 10px 24px;
+        /* primary colour/ordinary green */
+        background: rgb(28, 94, 37);
+        
+    }
+}
+
+
+
 @media (max-width: 768px) {
+   
     .header__navbar {
         display: none;
     }
 
-    .header__btn{
+    .header__btn {
         display: none;
     }
+
     .header__burger {
         display: block;
     }
 }
 
 .burgerActive {
-    display: flex;
+    display: block;
+}
+
+.closeMain {
+    display: none;
 }
 
 
@@ -629,34 +699,38 @@
     }
 }
 
-.owl-stage-flex{
+.owl-stage-flex {
     display: flex;
     align-items: center;
 }
+
 .owl-item {
     transition: 0.8s;
     width: 320px !important;
 }
-.owl-item .active{
-    transform: scale(.06); 
+
+.owl-item .active {
+    transform: scale(.06);
 }
 
-.active {
-}
-.owl-carousel .owl-item img{
+.active {}
+
+.owl-carousel .owl-item img {
     width: 50%;
 }
-.owl-item.active.center{
+
+.owl-item.active.center {
     z-index: 2;
     transform: scale(1.08);
     width: 420px !important;
 
-    
+
 
     .reviews {
         background: url(../img/bg-reviews.png);
         background-size: cover;
         background-repeat: no-repeat;
+
         &__content {
             padding: 32px;
             border-radius: 32px;
@@ -664,24 +738,29 @@
             margin-bottom: 30px;
             filter: none;
         }
+
         &__name {
             font-size: 20px;
             padding-bottom: 8px;
         }
+
         &__data {
             font-size: 18px;
             padding-bottom: 17px;
         }
+
         &__stars {
             padding-bottom: 20px;
         }
+
         &__text {
             font-size: 18px;
         }
-        
-   
+
+
     }
-    img{
+
+    img {
         width: 70%;
     }
 }
@@ -753,7 +832,7 @@
     &__buttons {
         display: flex;
         gap: 40px;
-       justify-content: center;    
+        justify-content: center;
         padding-top: 48px;
     }
 
@@ -995,5 +1074,3 @@
 
     &__info-sublist-item {}
 }
-
-

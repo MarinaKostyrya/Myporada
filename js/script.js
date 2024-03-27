@@ -23,12 +23,10 @@ $(document).ready(function(){
     
 });
 
-
 const burgerBtn = document.getElementById('burgerBtn')
 const burger = document.getElementById('burger')
-
+const main = document.querySelector('main')
 burgerBtn.addEventListener('click', function() {
     burger.classList.toggle('burgerActive')
-
-    
-})
+    main.classList.toggle('closeMain')
+}) 
