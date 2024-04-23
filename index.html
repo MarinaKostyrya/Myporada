@@ -19,7 +19,7 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="stylesheet" href="/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>MyPorada</title>
 </head>
 
@@ -211,6 +211,81 @@
                     </div>
                 </div>
             </section>
+            <section class="howItWorks">
+                <div class="howItWorks__container container">
+                    <div class="howItWorks__buttons">
+                        <div class="howItWorks__btn">
+                            <button>Як отримати пораду</button>
+                        </div>
+                        <div class="howItWorks__btn">
+                            <button>Як стати порадником</button>
+                        </div>
+                    </div>
+                    <div class="howItWorks__content">
+                        <div class="howItWorks__content-block">
+                            <div class="howItWorks__stages">
+                                <div class="howItWorks__stage" onclick="changeStage(1)">
+                                    <div class="howItWorks__number" id="step1">
+                                        <img src="./img/svg/howItWorks__number_01_yellow.svg" alt="">
+                                    </div>
+                                    <p class="howItWorks__text">Завантажуй додаток</p>
+                                </div>
+                                <div class="howItWorks__stage" onclick="changeStage(2)">
+                                    <div class="howItWorks__number" id="step2">
+                                        <img src="./img/svg/howItWorks__number_02_green.svg" alt="">
+                                    </div>
+                                    <p class="howItWorks__text">Реєструйся</p>
+                                </div>
+                                <div class="howItWorks__stage" onclick="changeStage(3)">
+                                    <div class="howItWorks__number" id="step3">
+                                        <img src="./img/svg/howItWorks__number_03_green.svg" alt="">
+                                    </div>
+                                    <p class="howItWorks__text">Свайпай та знаходь свого порадника</p>
+                                </div>
+                                <div class="howItWorks__stage" onclick="changeStage(4)">
+                                    <div class="howItWorks__number" id="step4">
+                                        <img src="./img/svg/howItWorks__number_04_green.svg" alt="">
+                                    </div>
+                                    <p class="howItWorks__text">Питай поради в реальному часі</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="howItWorks__image">
+                            <img id="howItWorlMainImage" src="./img/advisior1.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="howItWorks__cards">
+                        <div class="howItWorks__card">
+                            <div class="howItWorks__card-icon">
+                                <img src="./img/smile01.png" alt="">
+                            </div>
+                            <div class="howItWorks__card-content">
+                                <h4 class="howItWorks__card-title">Вимоги застосунку:</h4>
+                                <ul class="howItWorks__card-list">
+                                    <li class="howItWorks__card-item">Тобі має бути більше 18 років</li>
+                                    <li class="howItWorks__card-item">Запити на отримання порад юридичного, медичного та
+                                        інвестиційного характеру заборонені</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="howItWorks__card">
+                            <div class="howItWorks__card-icon">
+                                <img src="./img/smile02.png" alt="">
+                            </div>
+                            <div class="howItWorks__card-content">
+                                <h4 class="howItWorks__card-title">Основні правила застосунку:</h4>
+                                <ul class="howItWorks__card-list">
+                                    <li class="howItWorks__card-item">Повага, уважність та чуйність</li>
+                                    <li class="howItWorks__card-item">Толерантність</li>
+                                    <li class="howItWorks__card-item">Атмосфера взаємодії, підтримки, обміну думками та
+                                        досвідом</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="reviews ptb-96">
                 <div class="reviews__container container">
                     <h2 class="reviews__title">Відгуки</h2>
@@ -314,7 +389,7 @@
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body">
-                                        <strong>Отримання поради та спілкування Шукача та Порадника безпосередньо в чаті додатка.
+                                        <strong>Отримання поради та спілкування Шукача та Порадника безпосередньо в чаті додатка.</strong>
                                     </div>
                                 </div>
                             </div>
@@ -385,6 +460,24 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+            </section>
+            <section class="form ptb-96">
+                <div class="form__container container">
+                    <div class="form__content">
+                        <h3 class="form__title">Зв’яжіться з нами!</h3>
+                        <div class="form__text">Якщо у вас залишилися питання, заповніть, будь ласка, цю форму, і ми з
+                            вами зв’яжемося. </div>
+                        <div class="form__inputs">
+                            <input class="form__email" type="email" placeholder="Email" name="email" id="formEmail">
+                            <textarea placeholder="Про що ви хочете запитати?" class="form__description" name="desc"
+                                      id="formDesc" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="form__btn">Відправити</button>
+                    </div>
+                    <div class="form__image">
+                        <img src="./img/smile_form.png" alt="">
                     </div>
                 </div>
             </section>
