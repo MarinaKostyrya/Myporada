@@ -1,0 +1,940 @@
+@media (max-width: 992px) {
+
+  .header {
+    &__item a {
+      font-size: 14px;
+    }
+
+    &__list {
+      gap: 15px;
+    }
+
+    &__btn button {
+      font-size: 14px;
+    }
+  }
+
+  .application {
+    &__content {
+      gap: 60px;
+    }
+
+    &__image img {
+      width: 350px;
+    }
+
+    &__title {
+      padding-bottom: 40px;
+    }
+
+  }
+
+  .experience {
+    &__container {
+      gap: 10px;
+    }
+
+    &__image img {
+      width: 450px;
+    }
+  }
+
+  .connection {
+    &__contianer {
+      gap: 50px;
+    }
+
+    &__image img {
+      width: 400px;
+    }
+  }
+
+  .socialActivity {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__image-inner {
+
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  .preservation {
+    &__container {
+      gap: 0;
+    }
+  }
+
+  .moralSupport {
+    &__contianer {
+      gap: 50px;
+    }
+
+    &__image img {
+      width: 350px;
+    }
+  }
+
+  .form {
+    &__content {
+      padding: 50px;
+    }
+
+    &__image {
+      margin-bottom: 50px;
+    }
+  }
+
+  .howItWorks {
+    &__number2-img img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__btn button {
+      font-size: 28px;
+    }
+
+    &__button {
+      font-size: 16px;
+    }
+
+    &__cards {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__card-list {
+      padding: 30px;
+    }
+
+    &__card-content {
+      height: 300px;
+      width: 360px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .ptb-96 {
+    padding-bottom: 0;
+  }
+
+  .leaf__img {
+    max-width: 100%;
+  }
+
+  .leaf2__img {
+    display: none;
+  }
+
+  .application {
+    &__content {
+      gap: 50px;
+    }
+
+    &__title {
+      padding-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__image img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .reviews {
+    &__content {
+      filter: none;
+    }
+
+    &__slider-inner {
+      display: none;
+    }
+
+    &__slider-inner2 {
+      display: flex;
+    }
+  }
+
+  .experience {
+    padding-bottom: 50px;
+
+    &__container {
+      gap: 20px;
+    }
+
+    &__image img {
+      width: 300px;
+    }
+  }
+
+  .connection {
+    &__contianer {
+      gap: 50px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__image img {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .socialActivity {
+    &__container {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__title-active {
+      display: block;
+      font-weight: bold;
+    }
+
+    &__title-nonactive {
+      display: none;
+    }
+
+    &__image-inner {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .preservation {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__container {
+      gap: 10px;
+    }
+
+    &__image img {
+      width: 300px;
+      height: 200px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .moralSupport {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__contianer {
+      gap: 10px;
+    }
+
+    &__image img {
+      width: 250px;
+    }
+  }
+
+  .videoPresentation {
+    &__container {
+      padding: 0;
+    }
+
+    &__video {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+
+    &__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+
+  .form {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__content {
+      padding: 60px;
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+  }
+
+  .accordion {
+    &-button {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 24px;
+    }
+
+    &-body {
+      padding: 0 24px 24px;
+      font-size: 16px;
+    }
+
+    &-body strong {
+      font-size: 16px;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+    &-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-slide img {
+      display: block;
+      width: 80%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-slide {
+      border: 2px solid #FFFFFF;
+      border-radius: 25px;
+    }
+
+    &-wrapper {
+      margin-bottom: 35px;
+    }
+  }
+
+  .whyUs {
+    &__cards {
+      display: none;
+
+    }
+
+    &__cards-swiper {
+      display: block;
+    }
+
+    &__icon {
+      width: 80px;
+      margin: 0 auto;
+    }
+
+    &__icon img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__title {
+      padding-top: 70px;
+      padding-bottom: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide2 {
+      background-color: #DFE8E1;
+      border: none;
+    }
+
+    &__card {
+      width: 200px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__icon,
+    &__icon2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__icon img {
+      width: 39%;
+      height: 39%;
+    }
+
+    &__icon2 img {
+      width: 29%;
+      height: 29%;
+    }
+
+    &__subtitle {
+      color: rgb(3, 19, 0);
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0;
+      text-align: center;
+      padding-bottom: 16px;
+    }
+
+    .__text {
+      color: rgb(3, 19, 0);
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0;
+      text-align: center;
+      padding: 0 6px;
+    }
+
+  }
+
+  .howItWorks {
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__card {
+      margin: 0 auto;
+    }
+
+    &__buttons {
+      gap: 20px;
+    }
+
+    &__btn button {
+      font-size: 26px;
+      text-align: center;
+      padding: 18px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__stages {
+      gap: 20px;
+    }
+
+    &__info {
+
+    }
+    &__image img {
+      height: 400px;
+      width: 300px;
+    }
+
+
+  }
+  .swiper-button-prev {
+    color: #1C5E25;
+    height: 28px;
+    &:after {
+      color: #1C5E25;
+      font-size: 20px;
+    }
+  }
+  .swiper-button-next {
+    color: #1C5E25;
+    height: 28px;
+
+    &:after {
+      color: #1C5E25;
+      font-size: 20px;
+
+    }
+  }
+  .swiper-button-next-add {
+    position: static;
+    margin-top: 0 ;
+  }
+
+  .swiper-button-prev-add {
+    position: static;
+    margin-top: 0 ;
+  }
+}
+
+@media (max-width: 576px) {
+  .leaf__img {
+    display: none;
+  }
+  .leaf2__img {
+    display: none;
+  }
+  .title {
+    font-size: 28px;
+  }
+
+  .application {
+
+    &__content {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+
+    &__title {
+      padding-bottom: 66px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .experience {
+    padding-bottom: 30px;
+
+    &__container {
+      display: block;
+      text-align: center;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__image {
+      padding-bottom: 32px;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+  }
+
+  .connection {
+    &__contianer {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .socialActivity {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+      display: flex;
+      align-items: normal;
+    }
+
+    &__image-inner {
+      margin: 0 auto;
+      flex-direction: row;
+      gap: 20px;
+      padding-bottom: 24px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__content {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__image {
+      width: 155px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+
+    &__title-active {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__title-nonactive {
+      display: none;
+    }
+
+  }
+
+  .preservation {
+    &__container {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    &__image img {
+      width: 600px;
+      right: 0;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__image2 {
+      display: block;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    &__image2 img {
+      max-width: 300px;
+    }
+  }
+
+  .moralSupport {
+    &__contianer {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .extensions {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    &__image {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 32px;
+    }
+
+
+  }
+
+  .accordion {
+    &-button {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 24px;
+    }
+
+    &-body {
+      padding: 0 24px 24px;
+      font-size: 14px;
+    }
+
+    &-body strong {
+      font-size: 14px;
+    }
+  }
+
+  .form {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__image {
+      width: 138px;
+      height: 138px;
+    }
+
+    &__image img {
+      max-width: 100%;
+    }
+  }
+
+  .footer {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .form {
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__content {
+      padding: 22px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+    &__btn {
+      padding: 14px 0;
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    &__image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .reviews {
+    &__content {
+      max-width: 276px;
+      padding: 16px;
+    }
+
+    &__stars {
+      width: 185px;
+    }
+  }
+
+  .howItWorks {
+
+    &__swiper {
+      display: block;
+    }
+
+    &__content {
+      display: none;
+    }
+
+    &__cards {
+      padding-top: 60px;
+    }
+
+    &__card-content {
+      width: 300px;
+      height: 330px;
+    }
+
+    &__card-none img {
+      display: none;
+    }
+
+    &__card-title {
+      font-size: 22px;
+    }
+
+    &__card-item {
+      font-size: 18px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 38px;
+      width: 300px;
+    }
+
+    &__icon:first-child {
+      margin-left: 10px;
+    }
+
+    &__text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    &__text:last-child {
+      padding-right: 10px;
+    }
+
+    &__button-cart {
+      display: block;
+      margin: 0 auto;
+      background-color: #1C5E25;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 14px 90px;
+      border: 2px solid #1C5E25;
+      border-radius: 100px;
+    }
+
+    &__button-car {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .swiper {
+    &-slide {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__slide {
+      width: 300px;
+      padding-left: 50px;
+    }
+
+    &__inner {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    &__card-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .socialActivity {
+    &__image {
+      width: 130px;
+    }
+
+    &__title-active {
+      text-align: left;
+    }
+  }
+
+  .extensions {
+    &__image {
+      width: 138px;
+      height: 138px;
+    }
+  }
+
+  .form {
+    &__content {
+      width: 310px;
+    }
+
+    &__image {
+      width: 138px;
+      height: 138px;
+    }
+  }
+
+  .howItWorks {
+    &__card-icon img {
+      width: 30%;
+    }
+
+    &__btn button {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

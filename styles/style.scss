@@ -1,3 +1,5 @@
+@import "media";
+
 @mixin main-style($font-family, $font-size, $color) {
   font-size: $font-size;
   font-family: $font-family;
@@ -169,7 +171,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 
   .header__navbar {
     display: none;
@@ -226,7 +228,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding-bottom: 48px;
   }
@@ -268,7 +270,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -313,7 +315,7 @@
     font-size: 23px;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding-bottom: 16px;
   }
@@ -324,9 +326,13 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding: 0 6px;
+  }
+
+  &__cards-swiper{
+    display: none;
   }
 }
 
@@ -352,7 +358,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 24px;
   }
@@ -364,7 +370,7 @@
     font-size: 1em;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 }
@@ -388,7 +394,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 24px;
   }
@@ -399,7 +405,7 @@
     font-size: 1em;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -418,10 +424,12 @@
     justify-content: space-between;
   }
 
-  &__image {}
-
   &__content {
     max-width: 430px;
+  }
+
+  &__image-inner{
+    display: flex;
   }
 
   &__title {
@@ -431,9 +439,13 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 24px;
+  }
+
+  &__title-active{
+    display: none;
   }
 
   &__text {
@@ -443,7 +455,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -459,8 +471,6 @@
     gap: 199px;
   }
 
-  &__content {}
-
   &__title {
     /* Roboto/H3 (Medium) */
     color: rgb(3, 19, 0);
@@ -468,7 +478,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 24px;
   }
@@ -479,7 +489,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -495,9 +505,13 @@
     justify-content: center;
   }
 
-  &__video img {
+  &__img img{
     max-width: 100%;
     padding-right: 25px;
+  }
+
+  &__video{
+     display: none;
   }
 }
 
@@ -523,7 +537,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 24px;
 
@@ -536,16 +550,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
 
   }
 
-  &__image {
-    // position: absolute;
-    // right: 0;
-    // bottom: 0;
-    // max-width: 50vw;
+  &__image2{
+    display: none;
   }
 
   &__image img {
@@ -556,7 +567,27 @@
 .howItWorks {
   padding-top: 96px;
 
-  &__container {}
+  &__content{
+    display: block;
+  }
+
+  &__swiper{
+    display: none;
+  }
+
+  &__content-block {
+    width: 450px;
+  }
+
+  &__button{
+    background-color: #1C5E25;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 14px 90px;
+    border: 2px solid #1C5E25;
+    border-radius: 100px;
+  }
 
   &__buttons {
     display: flex;
@@ -609,7 +640,7 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -673,7 +704,7 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding: 17px 0;
   }
@@ -696,7 +727,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 }
@@ -744,6 +775,10 @@
     padding-bottom: 64px;
   }
 
+  &__slider-inner2{
+    display: none;
+  }
+
   &__content {
     padding: 25px;
     border-radius: 26px;
@@ -759,7 +794,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 130%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 7px;
   }
@@ -771,7 +806,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding-bottom: 14px;
   }
@@ -787,7 +822,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -860,7 +895,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   padding: 48px 48px;
   border-radius: 16px;
@@ -886,7 +921,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding-bottom: 24px;
   }
@@ -897,7 +932,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     padding-bottom: 32px;
   }
@@ -1050,8 +1085,9 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     padding: 0 90px 48px 48px;
   }
 }
+
